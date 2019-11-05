@@ -1,0 +1,14 @@
+{
+    "name": "Getting Started with Chrome Extensions and Google API Vision",
+    "description": "Get The sources of the images",
+    "version": "2.0",
+    "permissions":[
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action":{
+        "default_title": "Image Source",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2 
+}
