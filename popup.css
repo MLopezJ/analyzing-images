@@ -1,0 +1,37 @@
+.accordion {
+
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+  
+.panel {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.even {
+    background-color: rgb(178, 186, 187); 
+}
+
+.odd {
+    background-color: rgb(128, 139, 150); 
+}
+
+.divCard {
+    padding: 18px;
+}
+
+img {
+    padding: 3px;
+}
