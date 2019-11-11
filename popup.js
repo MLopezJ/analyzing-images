@@ -97,8 +97,6 @@ createMoreInfo = (p, image) =>{
 fillDivMoreInfo = (list,divMoreInfo) => {
     let ul = document.createElement("ul");
 
-    //console.log(imagesWithDescription[image].responses[0].localizedObjectAnnotations)
-    
     //for (let description in imagesWithDescription[image].responses[0].localizedObjectAnnotations){
     for (let description in list){ //testing case
         
@@ -162,10 +160,7 @@ var callback = async function (imagesFromBrowser) {
                     [divMoreInfo, btn] = createMoreInfo(p, image)
                     
                     
-                    list = imagesWithDescription[image].responses[0].localizedObjectAnnotations//[{mid: "/m/01g317", name: "Person", score: 0.7900113}, {mid: "/m/02dl1y", name: "Hat", score: 0.52533555}]
-
-                    
-                    //if (){ 
+                    list = imagesWithDescription[image].responses[0].localizedObjectAnnotations 
                     if (list){ //testing case
                         divMoreInfo = fillDivMoreInfo(list,divMoreInfo)
                     }
@@ -182,7 +177,6 @@ var callback = async function (imagesFromBrowser) {
             }
         }
 
-        //document.body.appendChild(h1);
         h2 ? document.body.appendChild(h2) : null
         document.body.appendChild(divSuccessful);
         document.body.appendChild(divError);
@@ -190,8 +184,6 @@ var callback = async function (imagesFromBrowser) {
         var acc = document.getElementsByClassName("accordion");
         deployInfoOnClick(acc)
         
-
-
         
     })
     .catch(error => {console.log(error)})
