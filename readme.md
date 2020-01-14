@@ -13,4 +13,4 @@ A Google Chrome extension who analice the images of the tab with Google Cloud Vi
 
 The extension will looks like this:
 
-![Alt text](../chromeExtension.PNG?raw=true "Title")
+![Alt text](./chromeExtension.PNG?raw=true "Chrome Extension")
